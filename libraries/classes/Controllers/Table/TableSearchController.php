@@ -152,7 +152,7 @@ class TableSearchController extends TableController
             }
             // reformat mysql query output
             if (strncasecmp($type, 'set', 3) == 0
-                || strncasecmp($type, 'enum', 4) == 0
+                //|| strncasecmp($type, 'enum', 4) == 0
             ) {
                 $type = str_replace(',', ', ', $type);
             } else {
